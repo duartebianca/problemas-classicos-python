@@ -47,10 +47,10 @@ def binary_contais(gene: Gene, key_codon: Codon) -> bool:
   while (low <= high):
     mid: int = (low + high)//2 #meio do trecho de gene a ser analisado
     if (gene[mid] < key_codon):
-    #se o codon procurado é maior que o que temos no meio do gene,            significa que ele está para a direita, portanto, devemos mover o          limite inferior para a direita desse meio.
+    #se o codon procurado é maior que o que temos no meio do gene, significa que ele está para a direita, portanto, devemos mover o limite inferior para a direita desse meio.
       low = mid+1
     elif (gene[mid]>key_codon):
-    #se o codon procurado é menor que o que temos no meio do gene,            significa que ele está para a esquerda, portanto, devemos mover o         limite superior para a esquerda desse meio.
+    #se o codon procurado é menor que o que temos no meio do gene, significa que ele está para a esquerda, portanto, devemos mover o limite superior para a esquerda desse meio.
       high = mid-1
     else:
       return True
