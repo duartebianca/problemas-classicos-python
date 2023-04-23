@@ -1,6 +1,6 @@
 def calculate_pi(n_terms: int) -> float:
   #Using Leibniz's formula.
-  #sum from 0 to n_terms of ( ((-1)^{n}) / (2n+1)).
+  #sum from 0 to n_terms of ( ((-1)^{k}) / (2k+1)).
   numerator: float = 4.0
   denominator: float = 1.0
   operation: float = 1.0
